@@ -8,20 +8,51 @@
     <style>
         body{
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            /* sequencia do formato shortand do background
+                color > image > position > repeat > [size] > attachement
+
+                observação: com o size não funciona
+            */
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
             background-size: cover;
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
             border-radius: 15px;           
+        }
+
+        main h1{
+            color: blueviolet;
+            text-align: center;
+        }
+        main p{
+            color: rgb(90, 28, 148);
+            text-align: justify;
+        }
+
+        aside{
+            background-color: rgb(79, 194, 85);
+            max-width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+        }
+
+        aside p{
+            color: brown;
+            text-align: justify;
         }
 
     </style>
@@ -42,5 +73,8 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laborum soluta dolores doloribus error, ducimus aspernatur quasi nesciunt pariatur corporis distinctio excepturi aut adipisci? Veniam similique mollitia ab porro magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis porro repellendus nemo? Veniam recusandae beatae reiciendis, quo quasi fugit porro accusamus vel? Quam magni ipsum illo. Excepturi, consequatur distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nam sed autem cum vel eveniet ea eligendi qui atque deleniti, vero ipsa quam unde hic tempore consequatur officia dolores fugit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, maxime nisi est assumenda rem rerum in harum reiciendis adipisci minima sapiente quas asperiores corporis nihil excepturi? Quos architecto facilis velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis aliquam sed velit? Sapiente, totam beatae accusantium id corrupti laboriosam consequuntur ullam modi aperiam dolore enim iusto repellendus in expedita.
         </p>
     </main>
+    <aside>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, odio iure velit ipsum voluptatem et excepturi magnam aspernatur quam corporis error quis consectetur earum molestiae id quo saepe cumque tenetur.</p>
+    </aside>
 </body>
 </html>
