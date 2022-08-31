@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Layout Básico</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            font-weight: bolder;
+        }
+
+        #cabecalho{
+            background-color: orange;
+            height: 150px;
+            width: 95%;
+            padding: 30px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        #menu{
+            background-color: green;
+            height: 500px;
+            width: 300px;
+            padding: 30px;
+            margin: 5px;
+            border-radius: 5px;
+            float: left;
+        }
+
+        #principal{
+            background-color: rgb(185, 185, 185);
+            height: 500px;
+            width: 800px;
+            padding: 30px;
+            margin: 5px;
+            border-radius: 5px;
+            float: left;    
+        }
+
+        #lateral{
+            background-color: blue;
+            height: 500px;
+            width: 300px;
+            padding: 30px;
+            margin: 5px;
+            border-radius: 5px;
+            float: left;
+        }
+
+        #rodape{
+            background-color: chocolate;
+            height: 100px;
+            width: 95%;
+            padding: 30px;
+            margin: 5px;
+            border-radius: 5px;
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        HEADER
+    </header>
+    <nav id="menu">
+        NAV
+    </nav>
+    <main id="principal">
+        MAIN
+    </main>
+    <aside id="lateral">
+        ASIDE
+    </aside>
+    <footer id="rodape">
+        FOOTER
+    </footer>
+</body>
+</html>
