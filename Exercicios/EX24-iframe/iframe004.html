@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem tempora alias quod unde ad temporibus dolorum fugiat, modi nobis molestias cum accusamus soluta est consequuntur maxime voluptatibus explicabo deserunt consequatur!</p>
+
+    <!-- segurança no iframe
+        sandbox="sandbox" bloqueia todos os formulários
+        para liberar dos site origem coloca allow-same-origen
+
+        referrerpolicy serve para aumentar a segurança dos iframe
+    -->
+    <iframe src="paginas-extras/pagina004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">Seu navegador não é compatível com isso...</iframe>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus dolores vitae, accusamus sed repellat iure temporibus voluptas doloremque hic architecto esse odit obcaecati numquam possimus corporis veritatis blanditiis molestiae reiciendis!</p>
+</body>
+</html>
