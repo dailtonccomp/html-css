@@ -1,0 +1,53 @@
+.login
+{
+	display: table; 
+	_position: relative; 
+	overflow: hidden;	
+	height:485px;
+	margin-left:180px;
+	margin-right:180px;
+	
+
+}
+.login_center_top
+{
+ _position: absolute; _top: 50%;display: table-cell; vertical-align: middle;
+
+
+}
+#login_botton
+{
+	_position: relative; _top: -50%;
+	width:420px;
+}
+#login_botton h1
+{
+  color:#CD2B1C;/*cor vermelha*/
+  padding-right:30px
+}
+
+#div_email
+{
+	float:right;
+	width:220px;
+	height:100px;
+}
+#img_login
+{
+	float:left;
+	width:150px;
+}
+.input_login,.input_busca
+{
+	
+	font-family:Arial, Helvetica, sans-serif;
+	color:#CD2B1C;	
+	background-color:#FFFFFF;
+	border: solid 1px #7F9DB9;
+	font-size:11px;
+}
+#botaoLogin
+{
+	border:solid 1px #333333;
+	background-color:#ffffff;
+}

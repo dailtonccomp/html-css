@@ -9,9 +9,9 @@
 }
 
 :root{
-    --cor0: #c5ebd6;
-    --cor1: #83e1ad;
-    --cor2: #3ddc84;
+    --cor0: #FFFFFF;
+    --cor1: #D5D5D5;
+    --cor2: #cfdadb;
     --cor3: #2fa866;
     --cor4: #1a5c37;
     --cor5: #063d1e;
@@ -21,20 +21,445 @@
     --fonte-android: 'Android', cursive;
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-decoration:none;
+	border:none;
+	vertical-align:middle;
+}
+body {
+/*	background:url(../img/fundo-degrade.jpg) repeat-X left top;*/
+	background-color: var(--cor1);
+	font-family: var(--fonte-padrao);
+}
+/****************************************
+	INICIO GERAL 
+****************************************/
+#geral
+{
+	margin:0 auto;
+	max-width:780px;
+	background-color: var(--cor0);
+}
+/****************************************
+	INICIO TOPO 
+****************************************/
+#topo
+{
+	height:95px;
+	background:url(../img/topo.jpg) no-repeat;
+	border:solid 1px #000000;
+}
+#menu {
+	height:90px;
+	background:url(../img/fundo_menu.png) repeat-X;
+	/*margin:3px 1px 0;*/
+	border:solid 1px #000000;
 }
 
-body{    
-    font-family: var(--fonte-padrao);    
+#menu ul {
+	margin:0 auto;
+	width:780px;
+	display:inline;
+	text-align:center;
 }
 
-#geral{
-    margin: 0 auto;
-    width: 780px;
-    background-color: #FFFFFF;
+#menu ul li {display:inline;}
+
+#menu ul li a  {
+	float:left;
+	font:bold 90% 'Trebuchet Ms', Verdana, Aria, Tahoma;
+	color:#000000;
+	/*padding:0 15px;*/
+	height:90px;
+	line-height:90px;
+	text-transform:uppercase;
+
+}
+
+#menu ul li a:hover {background:#F7F7F7 url(/img/fundo_menu_over.png) repeat-X;}
+
+
+
+#menu_topo1
+{
+	height:7px;
+	background-color:#333333;
+	border-top:solid 1px #FFFFFF;
+	border-right:solid 1px #000000;
+	border-left:solid 1px #000000;
+	font-size:7px;
+
+}
+/****************************************
+	FIM TOPO
+****************************************/
+#meio
+{
+	border:solid 1px #000000;
+}
+
+/* RODAPE */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+#rodape
+{
+	clear:both;
+	height:35px;
+	background:url(../img/rodape.png) repeat-x;
+	border:solid 1px #000000;
+}
+#rodape h1
+{
+	text-align:center;
+	font-size:11px;
+	color:#f7f7f7;
+	padding-top:5px;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/* LOGIN */
+
+#login
+{
+	margin-top:60px;
+	text-align:center;
+	margin-bottom:60px;
+	border:solid 1px #000000;
+	height:210px;
+	width:388px;
+	margin:75px auto;
+}
+#topo_login
+{
+	background:url(../img/login.png) no-repeat;
+	height:63px;
+}
+#formlogin
+{
+	width:200px;
+	height:78px;
+    border:solid 1px #a5acb2;
+	margin:25px auto;
+	padding-bottom:10px;
+	padding-top:10px;
+	BACKGROUND:  #f7f7f7 no-repeat left 50%;
+}
+#submit input
+{
+	padding:0px;
+	margin-left:10px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#000000;
+	border:solid 1px #333333;
+	cursor:pointer;
+}
+#verlogin
+{
+BACKGROUND:  #f7f7f7 no-repeat left 50%;
+height:22px;
+}
+
+/* FIM LOGIN */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+/* CADASTRO USUARIOS */
+#cadastro_usuarios label
+{
+	font:bold 90% Arial, Helvetica, sans-serif;
+	color:#666666;
+}
+#cadastro_usuarios input,#cadastro_usuarios select
+{
+	color:#FF0000;
+	border: 1px solid #7F9DB9;
+} 
+#cadastro_usuarios #formSubmit input
+{
+	margin-left:59px;
+	width:80px;
+	cursor:pointer;
+	border:outset 1px #ccc;
+	background:#999;
+	color:#FF0000;
+	font-weight:bold;
+	padding: 1px 2px;
+	background:url(../img/fundo_menu.png) repeat-x left top;
+	text-transform:none;
+
+}
+#cadastro_usuarios label,#cadastro_usuarios input,#cadastro_usuarios select {
+	display: block;
+	width: 200px;
+	float: left;
+	margin-bottom: 10px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	text-transform:uppercase;
+}
+
+#cadastro_usuarios label {
+	text-align: right;
+	width: 115px;
+	padding-right: 10px;
+}
+#cadastro_usuarios span
+{
+	float:left;
+}
+#cadastro_usuarios br {
+	clear: left;
+}
+
+
+/* FIM CADASTRO USUARIOS */
+
+/* LAN�AMENTOS  DIARIOS*/
+#lancamentos label
+{
+	font:bold 90% Arial, Helvetica, sans-serif;
+	color:#666666;
+}
+#lancamentos input,#lancamentos select
+{
+	color:#FF0000;
+	border: 1px solid #7F9DB9;
+} 
+#lancamentos textarea
+{
+	color:#FF0000;
+	border:outset 1px #000000;
+	/*border: 1px solid #7F9DB9;*/
+	background-color:#FFA39D
+}
+#lancamentos #formSubmit input
+{
+	margin-left:59px;
+	width:80px;
+	cursor:pointer;
+	border:outset 1px #ccc;
+	background:#999;
+	color:#FF0000;
+	font-weight:bold;
+	padding: 1px 2px;
+	background:url(../img/fundo_menu.png) repeat-x left top;
+	text-transform:none;
+}
+#lancamentos label,#lancamentos input,#lancamentos select ,#lancamentos textarea{
+	display: block;
+	width: 200px;
+	float: left;
+	margin-bottom: 10px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	text-transform:uppercase;
+}
+
+#lancamentos #buscar_dentista,#pega_data
+{
+	float:left;
+	display:block;
+	width:40px;
+}
+#lancamentos label {
+	text-align: right;
+	width: 140px;
+	padding-right: 10px;
+}
+
+#lancamentos br {
+	clear: left;
+}
+/* FIM LAN�AMENTOS DIARIOS */
+#pagamento_descricao
+{
+
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/* RODAPE */
+
+.borda_preta {
+	border:1px solid #000000;
+}
+
+.quote {
+	BORDER-RIGHT: #a5acb2 1px solid; 
+	PADDING-RIGHT: 15px;
+ 	BORDER-TOP: #a5acb2 1px solid; 
+	PADDING-LEFT: 15px;
+	FONT-SIZE: 10pt;
+	BACKGROUND:  #f7f7f7 no-repeat left 50%;
+	PADDING-BOTTOM: 4px;
+	BORDER-LEFT: #a5acb2 1px solid; 
+	COLOR: #424242; 
+	LINE-HEIGHT: 125%;
+	PADDING-TOP: 4px; 
+	BORDER-BOTTOM: #a5acb2 1px solid; 
+	FONT-FAMILY: Verdana, arial
+}
+.formtxt {
+	font-size: 10px;
+	font:bold 90% Arial, Helvetica, sans-serif;
+	border: 1px solid #000000;
+	padding:1px;
+
+}
+.textored
+{
+	font:bold 90% 'Trebuchet Ms', Verdana, Aria, Tahoma;
+	color:#FF0000;
+	font-size:11px;
+
+}
+.textoredArial
+{
+	font:bold 90% Arial, Helvetica, sans-serif;
+	color:#FF0000;
+	font-size:11px;
+
+}
+.bordaTopBottom
+{
+	border-top:solid 1px #000000;
+	border-bottom: solid 1px #000000;
+}
+#cadastro_usuarios .senha
+{
+	text-transform:none;
+}
+.input
+{
+	text-transform:uppercase;
+	border:1px solid #000000;
+	color:#FF0000;	
+	width:215px;
+}
+.bt
+{
+	cursor:pointer;
+	border:outset 1px #ccc;
+	background:#999;
+	color:#FF0000;
+	font-weight:bold;
+	background:url(../img/fundo_menu.png) repeat-x left top;
+	text-transform:none;
+	font-size:10px;
+	float:right;
+}
+.textoBranco
+{
+	color:#FFFFFF;
+	font-size:11px;
+	text-transform:uppercase;
+	font:bold 80% Arial, Helvetica, sans-serif;
+}
+
+#cadastro_usuarios .textoemail
+{
+	text-transform:lowercase;
+}
+
+/*---- calendario --------*/
+.semana
+{
+	color:#FFFFFF;
+	font-size:12px;
+	font:bold 80% Arial, Helvetica, sans-serif;
+
+}
+.dias a
+{
+	color:#000000;
+	text-decoration:none;
+	font-weight:normal;
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.dias a:hover
+{
+	text-decoration:underline;
+}
+.copy {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+.textoLinkPreto a
+{	
+	font:bold 80% Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#000000;
+	
+}
+.textoLinkPreto a:hover
+{
+	color:#FF0000;
+}
+.txtpreto
+{
+	font:bold 80% Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#000000;
+}
+.txtwhite
+{
+	font:bold 80% Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#ffffff;
+}
+.borda_bottom_right {
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+}
+.link_paginacao a
+{
+	color:#333333;
+	text-decoration:none;
+	font-weight:normal;
+	font:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+}
+.link_paginacao a:hover
+{
+	color:#CD2B1C;/*cor vermelha*/
+}
+#paginacao
+{
+	font:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+}
+/*---- fim calendario --------*/
+#hintbox{ /*CSS for pop up hint box */
+position:absolute;
+top: 0;
+background-color: lightyellow;
+width: 150px; /*Default width of hint.*/ 
+padding: 3px;
+border:1px solid black;
+font:normal 11px Verdana;
+line-height:18px;
+z-index:100;
+border-right: 3px solid black;
+border-bottom: 3px solid black;
+visibility: hidden;
+}
+
+.hintanchor{ /*CSS for link that shows hint onmouseover*/
+font-weight: bold;
+color: navy;
+margin: 3px 8px;
+}
+
+#recursos ul 
+{
+	list-style-type:circle;
+	padding:15px;
+	margin:10px;
 }
 
 header > h2{
@@ -96,15 +521,25 @@ main{
 }
 
 .content{
-    background-color: var(--cor0);
+    background-color: var(--cor2);
     padding: 10px;
     height: 500px;   
 }
 
-footer{
-    background-color: var(--cor5);
+footer{    
     color: var(--cor0);
     text-align: center;
     font-size: 0.8em;
     padding: 5px;    
+}
+
+#p1{
+	background-color: var(--cor5);
+	padding: 1px;
+}
+
+#p2{
+	background-color: var(--cor4);
+	font-size: 0.7em;
+	padding: 1px;
 }

@@ -1,0 +1,98 @@
+ul#menu,ul#menu ul {
+	background:#f4f4f4; 
+	text-indent:0px;
+	padding-right: 1px; 
+	display: block; 
+	padding-left: 1px; 
+	padding-bottom: 1px;
+	margin: 1px; 
+	list-style-type: none; 
+	width: 405px; 
+	font-size:10px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-left:5px;
+	}
+
+ul#menu li {
+	position: relative;
+	list-style: none;
+	}
+
+ul#menu li a {
+	padding-right: 10px;
+	border-top: #ffffff 1px solid; 
+	display: block; 
+	padding-left: 10px;
+	padding-bottom: 5px;
+	border-left: #e4e4e4 4px solid;
+	padding-top: 5px; 
+	text-decoration: none; 
+	color: #333333;
+	display: block;	
+}
+ul#menu li a:hover
+{
+	border-left: #CD2B1C 4px solid;
+
+} 
+
+* html ul#menu li { float: left; height: 1%; }
+* html ul#menu li a { height: 1%; }
+
+
+ul#menu ul ul
+{
+	position: absolute;
+	left: 320px; 
+	top: 0;
+	border:solid 1px #666666;
+}
+ul#menu ul
+{
+	position: absolute;
+	display: none;
+	left: 161px; 
+	top: 0;
+	width:220px;
+	border:solid 1px #666666;
+	width: 325px; 
+}
+ul#menu li ul li a {
+	padding-right: 10px;
+	border-top: #ffffff 1px solid; 
+	padding-left: 10px;
+	padding-bottom: 5px;
+	border-left: #e4e4e4 4px solid;
+	width: 300px; 
+	padding-top: 5px; 
+	text-decoration: none; 
+	color: #333333;
+
+} 
+ul#menu li a:hover
+{
+	background-color:#ffffff;
+}
+ul#menu li:hover ul ul,ul#menu li:hover ul ul ul,ul#menu li.over ul ul,ul#menu li.over ul ul ul
+{ 
+	display: none; 
+	
+} 
+
+ul#menu li:hover ul,
+ul#menu li li:hover ul,
+ul#menu li li li:hover ul,
+ul#menu li.over ul,
+ul#menu li li.over ul,
+ul#menu li li li.over ul { display: block; 
+
+} 
+
+ul#menu li.sub_menu { background: transparent url(../img/seta_menu1.gif) right center no-repeat; }
+
+ul#menu li.sub_menu:hover,
+ul#menu li.over { background-color: #f9f9f9; }
+
+ul#menu li a:hover { color: #E2144A; }
+
+
