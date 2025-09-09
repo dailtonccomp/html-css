@@ -1,37 +1,62 @@
+/* Define o padrão de codificação de caracteres como UTF-8 */
 @charset "UTF-8";
 
+/* Remove margens e espaçamentos padrões e aplica box-sizing para todos os elementos */
 * {
+    /* Remove qualquer margem padrão dos elementos */
     margin: 0;
+    /* Remove qualquer espaçamento interno padrão dos elementos */
     padding: 0;
+    /* Inclui a borda e o padding no cálculo da largura/altura */
     box-sizing: border-box;
 }
 
+/* Define o estilo geral do corpo da página */
 body {
+    /* Define a família de fontes usada no corpo */
     font-family: Arial, Helvetica, sans-serif;
+    /* Define o tamanho da fonte padrão como 1em (igual ao tamanho padrão do navegador) */
     font-size: 1em;
+    /* Define a cor de fundo do corpo */
     background-color: lightgray;
+    /* Faz o body ocupar 100% da altura da tela */
     height: 100vh;
+    /* Faz o body ocupar 100% da largura da tela */
     width: 100vw;
 }
 
+/* Estiliza o cabeçalho da página */
 header {
+    /* Define a cor de fundo do cabeçalho */
     background-color: gray;
+    /* Define a cor do texto dentro do cabeçalho */
     color: white;
+    /* Adiciona espaçamento interno de 10px */
     padding: 10px;
 }
 
+/* Estiliza especificamente o h1 que está dentro do header */
 header > h1 {
+    /* Adiciona uma borda pontilhada preta ao redor do título */
     border: 1px dotted black;
 }
 
+/* Estiliza especificamente o nav que está dentro do header */
 header > nav {
+    /* Adiciona uma borda pontilhada preta ao redor do menu de navegação */
     border: 1px dotted black;
 }
 
+/* Estiliza a área principal do site */
 main {
+    /* Define fundo branco para a área principal */
     background-color: white;
+    /* Adiciona margem externa de 10px */
     margin: 10px;
+    /* Adiciona espaçamento interno de 10px */
     padding: 10px;
+    /* Arredonda os cantos em 10px */
     border-radius: 10px;
-    box-shadow: 2px 2px 3px rgba(0,0,0,0336);
+    /* Adiciona sombra ao redor do main */
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.336);
 }
